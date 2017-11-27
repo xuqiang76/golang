@@ -28,7 +28,7 @@ func main() {
 
 func send(conn net.Conn) {
     for {
-        len, err := conn.Write([]byte("client send"))
+        _, err := conn.Write([]byte("client send"))
         if err != nil {
             log.Print("client send : ", err)
             conn.Close()
