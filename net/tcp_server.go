@@ -42,5 +42,4 @@ func handle_conn(conn net.Conn) {
        log.Print("recv message : ", string(buf[0:len]))
        conn.Write([]byte("server server write "))
     }
-
 }
