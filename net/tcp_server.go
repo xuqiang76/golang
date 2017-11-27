@@ -26,7 +26,6 @@ func main() {
     defer func() {
         listener.Close()
     }()
-
 }
 
 func handle_conn(conn net.Conn) {
