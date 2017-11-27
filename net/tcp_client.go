@@ -3,6 +3,7 @@ package main
 import (
     "log"
     "net"
+    "time"
 )
 
 func main() {
@@ -28,6 +29,7 @@ func main() {
 
 func send(conn net.Conn) {
     for {
+        time.Sleep(3 * time.Second)
         _, err := conn.Write([]byte("client send"))
         if err != nil {
             log.Print("client send : ", err)
