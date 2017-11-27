@@ -6,8 +6,8 @@ import (
     "net"
 )
 
-func func main() {
-    listener, err := net.Listen("tcp", 127.0.0.1:9090)
+func main() {
+    listener, err := net.Listen("tcp", "127.0.0.1:1234")
     if err != nil {
         log.Print("net.Listen : ", err)
         return
@@ -25,7 +25,7 @@ func func main() {
 
     defer func() {
         listener.Close()
-    }
+    }()
 
 }
 
