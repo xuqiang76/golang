@@ -1,8 +1,8 @@
-package main 
+package main
 
 import (
-	"net"
 	"log"
+	"net"
 	"time"
 )
 
@@ -19,7 +19,7 @@ func main() {
 	buf := make([]byte, 1024)
 	for {
 		len, err := conn.Read(buf)
-		if err != {
+		if err != nil {
 			conn.Close()
 			return
 		}
