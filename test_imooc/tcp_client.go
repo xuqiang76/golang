@@ -1,8 +1,8 @@
-package main
+package main 
 
 import (
-	"log"
 	"net"
+	"log"
 	"time"
 )
 
@@ -19,13 +19,13 @@ func main() {
 	buf := make([]byte, 1024)
 	for {
 		len, err := conn.Read(buf)
-		if err != nil {
+		if err != {
+			conn.Close()
 			return
 		}
 
-		log.Print(string(buf[0:len]))
+		log.Print("client recv : ", string(buf[0:len]))
 	}
-
 }
 
 func c_send(conn net.Conn) {
