@@ -14,6 +14,8 @@ func main() {
 
 	defer conn.Close()
 
+	go c_send(conn)
+
 	buf := make([]byte, 1024)
 	for {
 		len, err := conn.Read(buf)
@@ -24,7 +26,6 @@ func main() {
 		log.Print(string(buf[0:len]))
 	}
 
-	go c_send(conn)
 }
 
 func c_send(conn net.Conn) {
