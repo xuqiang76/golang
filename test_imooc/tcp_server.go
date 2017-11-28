@@ -1,45 +1,38 @@
 package main
 
 import (
-    "log"
-    "net"
+	"log"
+	"net"
 )
 
 func main() {
-    listener, err := net.Listen("tcp", "127.0.0.1:1234")
-    if err != nil {
-        log.Print("net.Listen : ", err)
-        return
-    }
+	listener, err := net.Listen("tcp", "127.0.0.1:1234")
+	if err != nil {
+		return
+	}
 
-    for {
-        conn, err := listener.Accept()
-        if err != nil {
-            log.Print("listener.Accept : ", err)
-            continue
-        }
+	defer listener.Close()
 
-        go handle_conn(conn)
-    }
+	for {
+		conn, err := listener.Accept()
+		if err != nil {
+			continue
+		}
 
-    defer func() {
-        listener.Close()
-    }()
+		go handle_conn(conn)
+	}
 }
 
 func handle_conn(conn net.Conn) {
-    buf := make([]byte, 1024)
+	buf := make([]byte, 1024)
+	for {
+		len, err := conn.Read(buf)
+		if err != nil {
+			conn.Close()
+			return
+		}
 
-    defer conn.Close()
-
-    for {
-        len, err := conn.Read(buf)
-        if err != nil {
-            log.Print("conn.Read : ", err)
-            return
-        }
-
-       log.Print("recv message : ", string(buf[0:len]))
-       conn.Write([]byte("server server write "))
-    }
+		log.Print("server read : ", string(buf[0:len]))
+		conn.Write([]byte("server"))
+	}
 }
