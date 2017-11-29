@@ -11,6 +11,10 @@ func main() {
 		return
 	}
 
+	defer func() {
+		listen.Close()
+	}()
+
 	for {
 		conn, err := listen.Accept()
 		if err != nil {
@@ -20,9 +24,6 @@ func main() {
 		go handle_conn(conn)
 	}
 
-	defer func() {
-		listen.Close()
-	}()
 }
 
 func handle_conn(conn net.Conn) {
