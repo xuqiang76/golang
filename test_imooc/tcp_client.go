@@ -26,6 +26,7 @@ func main() {
 
 		log.Print("client recv : ", string(buf[0:len]))
 	}
+
 }
 
 func c_send(conn net.Conn) {
@@ -36,5 +37,6 @@ func c_send(conn net.Conn) {
 			conn.Close()
 			return
 		}
+
 	}
 }
