@@ -7,7 +7,7 @@ import (
 
 func main() {
 	listen, err := net.Listen("tcp", "127.0.0.1:1234")
-	if err := nil {
+	if err != nil {
 		return
 	}
 
@@ -15,7 +15,7 @@ func main() {
 
 	for {
 		conn, err := listen.Accept()
-		if err := nil {
+		if err != nil {
 			continue
 		}
 
