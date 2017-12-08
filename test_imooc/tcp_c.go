@@ -28,7 +28,7 @@ func main() {
 
 func c_send(conn net.Conn) {
 	for {
-		time.Sleep(3 * time.second)
+		time.Sleep(3 * time.Second)
 		_, err := conn.Write([]byte("client"))
 		if err != nil {
 			return
