@@ -82,7 +82,7 @@
     - 数据抽象
     - 数据和过程的组织方式
 
-### 最佳实践 ###
+### 最佳实践(不断补充) ###
  < https://blog.csdn.net/shuanger_/article/details/48241767 >
 
 - 使用单一的 GOPATH
