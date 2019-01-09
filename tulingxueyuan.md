@@ -83,6 +83,22 @@
     - 数据和过程的组织方式
 
 
+ < https://blog.csdn.net/shuanger_/article/details/48241767 >
+
+- 使用单一的 GOPATH
+- godep工具
+- 将 for-select 封装到函数中
+- 在初始化结构体时使用带有标签的语法
+- 将结构体的初始化拆分到多行
+- 为整数常量添加 String() 方法
+- 让 iota 从 +1 开始增量
+- 返回函数调用
+- 把 slice、map 等定义为自定义类型
+- withContext 封装函数
+- 为访问 map 增加 setter，getters
+
+
+
 
 
 ![go](https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=85a989f5d933c895b2739029b07a1895/d52a2834349b033bd13802b815ce36d3d539bd24.jpg)
