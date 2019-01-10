@@ -31,8 +31,8 @@
 
 ### 安装编译环境和IDE ###
 
-- linux下的go语言编译环境(以后讲)
-- windows安装< https://studygolang.com/dl >
+- linux下的go语言(以后讲)
+- windows下简单安装< https://studygolang.com/dl >
 	- go
 	- go version
 	- go env
