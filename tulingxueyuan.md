@@ -33,8 +33,8 @@
 
 - linux下的go语言编译环境(以后讲)
 - windows安装< https://studygolang.com/dl >
+	- go
 	- go version
-	- go help
 	- go env
 - Idea编辑器(sublime VScode Eclipse LiteIDE Vim 自己喜欢的/熟悉的皆可)
 - goland：https://www.jetbrains.com/go/
