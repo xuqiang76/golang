@@ -25,14 +25,15 @@
 
 ### 一个程序示例 ###
 
+- play.golang.org (需要翻墙)
 - 基本语法结构
 - 编程是啥
 
 ### 安装编译环境和IDE ###
 
-- linux下的go语言编译环境
+- linux下的go语言编译环境(以后讲)
+- windows安装< https://studygolang.com/dl >
 - Idea编辑器(sublime VScode Eclipse LiteIDE Vim 自己喜欢的/熟悉的皆可)
-- play.golang.org (需要翻墙)
 
 ### 基本语法(以后展开) ###
 
