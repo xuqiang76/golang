@@ -41,13 +41,12 @@
 
 ### 安装编译环境和IDE ###
 
-- linux下的go语言(以后讲)
+- linux下的go语言(以后再讲)
 - windows下简单安装< https://studygolang.com/dl >
 	- go
 	- go version
 	- go env
-- Idea编辑器(sublime VScode Idea Eclipse LiteIDE Vim Emacs 自己喜欢的/熟悉的皆可)
-- goland：https://www.jetbrains.com/go/
+- Idea编辑器(sublime VScode Idea goland Eclipse LiteIDE Vim Emacs 自己喜欢的/熟悉的皆可用)
 
 ### 基本语法(以后展开) ###
 
