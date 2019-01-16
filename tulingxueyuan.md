@@ -82,9 +82,9 @@
 - go语言基本数据类型
     - 整型
         - (int / uint  / int8 / int16 / int 32 / int64)
-    - 浮点型(float32 / float64 ; 稀疏性,区别有理数/实数)
+    - 浮点型(float32 / float64 ; 离散和连续,区别有理数/实数)
         - 浮点数 vs 实数 vs 有理数
-    - 复数 (complex64 / complex128   ; 稀疏性,区别数学里的复数)
+    - 复数 (complex64 / complex128   ; 离散和连续,区别数学里的复数)
     ```
     z := x + yi
     x = real(z)
