@@ -140,7 +140,7 @@
 	case        defer       go      map         struct
 	chan        else        goto    package     switch
 	const       fallthrough if      range       type
-	continue    for     import  return      var
+	continue    for         import  return      var
 	```
 
 	- var和const参考2.2Go语言基础里面的变量和常量申明
