@@ -133,7 +133,7 @@
 
 ### 总结 ###
 
-- 只有二十五个关键字
+- 25个关键字
 
 	```
 	break       default     func    interface   select
@@ -143,20 +143,20 @@
 	continue    for         import  return      var
 	```
 
-	- var和const参考2.2Go语言基础里面的变量和常量申明
-	- package和import已经有过短暂的接触
-	- func 用于定义函数和方法
-	- return 用于从函数返回
-	- defer 用于类似析构函数
-	- go 用于并行
-	- select 用于选择不同类型的通讯
-	- interface 用于定义接口，参考2.6小节
-	- struct 用于定义抽象数据类型，参考2.5小节
-	- break、case、continue、for、fallthrough、else、if、switch、goto、default这些参考2.3流程介绍里面
-	- chan用于channel通讯
-	- type用于声明自定义类型
-	- map用于声明map类型数据
-	- range用于读取slice、map、channel数据
+	- var 和 const 语言基础里面的变量和常量申明
+	- package 和 import 包管理
+	- func 定义函数和方法
+	- return 从函数返回
+	- defer 类似析构函数
+	- go 并行
+	- select 选择不同类型的通讯
+	- interface 定义接口
+	- struct 定义抽象数据类型
+	- break、case、continue、for、fallthrough、else、if、switch、goto、default 流程控制
+	- chan 用于 channel 通讯
+	- type 声明自定义类型
+	- map 声明map类型数据
+	- range 读取 slice、map、channel 数据
 	
 
 
