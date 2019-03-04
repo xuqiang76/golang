@@ -65,7 +65,6 @@
         - 运算符
         - 基本控制结构
         - 函数
- 
     
 - 二进制
 
@@ -96,12 +95,15 @@
 
 ### 安装编译环境和IDE ###
 
-- linux下的go语言(以后再讲)
+- 关于语言,不用关心:解释型语言/编译型语言(涉及技术选型) (初心)
+- linux下的go语言(略)
 - windows下简单安装< https://studygolang.com/dl >
 	- go
 	- go version
 	- go env
-- Idea编辑器(sublime VScode Idea goland Eclipse LiteIDE Vim Emacs 自己喜欢的/熟悉的皆可用)
+- IDE安装(调试)(sublime VScode Idea goland Eclipse LiteIDE Vim Emacs 自己喜欢的/熟悉的皆可用)
+- go fmt (编码规范 / 软件工程范畴 / 团队沟通)
+- 命令行编译执行 / IDE编译执行调试
 
 ### 基本语法 ###
  - 变量声明  
@@ -124,8 +126,15 @@
     - 常量
         - iota
  
+    - 交换两个变量
+     
+### 面向接口 ###
  
- 
+- 以示区别(java/C++) 
+
+
+### 包结构 ###
+
   ---
   (以后展开)
   ---
