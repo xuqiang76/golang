@@ -96,19 +96,20 @@
 ### 安装编译环境和IDE ###
 
 - 关于语言,不用关心:解释型语言/编译型语言(涉及技术选型) (初心)
-- linux下的go语言(略)
-- windows下简单安装< https://studygolang.com/dl >
+- go语言安装< https://studygolang.com/dl >
 	- go
 	- go version
 	- go env
-- IDE安装(调试)(sublime VScode Idea goland Eclipse LiteIDE Vim Emacs 自己喜欢的/熟悉的皆可用)
+- IDE安装(调试)(sublime VScode Idea goLand Eclipse LiteIDE Vi Emacs 自己喜欢的/熟悉的皆可用)
 - go fmt (编码规范 / 软件工程范畴 / 团队沟通)
 - 命令行编译执行 / IDE编译执行调试
 
+
 ### 基本语法 ###
- - 变量声明  
- - 赋值
-- go语言基本数据类型
+- 变量声明与赋值
+    - 一个小程序,swap函数(交换两个变量)
+    
+- go语言基本数据类型(不连续的,有限的)
     - 整型
         - (int / uint  / int8 / int16 / int 32 / int64)
     - 浮点型(float32 / float64 ; 离散和连续,区别有理数/实数)
@@ -123,10 +124,11 @@
     - 字符串 string
         - go语言字符串是一个不可改变的字节序列;通常被解释为采用UTF8编码的Unicode字符集
     - 扩展类型 (byte / rune / uintptr)
-    - 常量
-        - iota
+    
+- 常量
+    - iota
  
-    - 交换两个变量
+### 内建容器 ###
      
 ### 面向接口 ###
  
