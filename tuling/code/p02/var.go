@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 var (
-	i   = 0
+	i int
 	j   = 1
 	str = "text"
 )
