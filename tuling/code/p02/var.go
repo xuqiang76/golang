@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 var (
-	i int
+	i   int
 	j   = 1
 	str = "text"
 )
@@ -14,7 +14,6 @@ func varValue() {
 
 	fmt.Println(m, str)
 	fmt.Printf("%d %q \n", m, str)
-	fmt.Println()
 }
 
 func varInit() {
@@ -22,7 +21,6 @@ func varInit() {
 	var str string = "text"
 
 	fmt.Println(m, n, str)
-	fmt.Println()
 }
 
 func varNoType() {
@@ -35,8 +33,8 @@ func varNoType() {
 func varShort() {
 	m, n, s := 1, 2, "text"
 	n = 5
-	fmt.Println(m, n, s)
-	fmt.Println()
+	a, n := 1, 666	// n 只做赋值(注意类型) ,不做声明 , 不报错
+	fmt.Println(m, n, s, a)
 }
 
 func main() {
