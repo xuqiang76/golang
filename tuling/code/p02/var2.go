@@ -26,29 +26,13 @@ func varZero() {
 
 func varTypeChange() {
 	a := 1.23
-	b := int(a)
+	b := int(a)	//bool值无法参与数值运算，也无法与其他类型进行转换
 	fmt.Println(b)
 }
 
-func swap() {
-
-	x, y := 1, 2
-
-	tmp := x
-	x = y
-	y = tmp
-
-	//x = x ^ y
-	//y = x ^ y
-	//x = x ^ y
-
-
-	fmt.Println(x, y)
-}
 
 func main() {
 	varComplex()
 	varZero()
 	varTypeChange()
-	swap()
 }

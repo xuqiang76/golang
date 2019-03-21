@@ -32,7 +32,7 @@ func varNoType() {
 
 func varShort() {
 	m, n, s := 1, 2, "text"
-	n = 5
+	n = 1
 	a, n := 1, 666	// n 只做赋值(注意类型) ,不做声明 , 不报错
 	fmt.Println(m, n, s, a)
 }
