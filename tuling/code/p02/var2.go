@@ -4,11 +4,9 @@ import (
 	"fmt"
 )
 
-func varComplex() {
-	a := 3 + 4i
-	b := complex(3, 4)
-	fmt.Println(a)
-	fmt.Println(b)
+func main() {
+
+	varTypeChange()
 }
 
 func varZero() {
@@ -26,13 +24,6 @@ func varZero() {
 
 func varTypeChange() {
 	a := 1.23
-	b := int(a)	//bool值无法参与数值运算，也无法与其他类型进行转换
+	b := int(a) //bool值无法参与数值运算，也无法与其他类型进行转换
 	fmt.Println(b)
-}
-
-
-func main() {
-	varComplex()
-	varZero()
-	varTypeChange()
 }
