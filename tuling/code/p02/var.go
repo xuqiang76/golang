@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	varInit()
+	varDeclare()
 
 }
 
@@ -25,9 +25,10 @@ func varInit() {
 }
 
 func varShort() {
-	m, n, s := 1, 2, "text"
+	m, n, s := 1, 2, 4
 	n = 1
 	a, n := 1, 666 // n 只做赋值(注意类型) ,不做声明
+
 	fmt.Println(m, n, s, a)
 
 }
@@ -35,5 +36,5 @@ func varShort() {
 var (
 	i   int
 	j   = 1
-	str = "text"
+	str = "text1"
 )

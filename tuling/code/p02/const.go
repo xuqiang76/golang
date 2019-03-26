@@ -10,6 +10,7 @@ func consts() {
 
 	fmt.Println(a, b, c)
 	fmt.Println(i)
+	fmt.Printf("%T %T \n", a, b)
 
 }
 
@@ -17,10 +18,12 @@ func menu() {
 	const (
 		cat   = iota
 		man   = 2.3
-		women
+		women = iota
+		_
 		child
 		dog
 	)
+
 	fmt.Println(cat, man, women, child, dog)
 }
 
