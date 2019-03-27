@@ -6,6 +6,7 @@ import (
 
 func main() {
 	consts()
+	enums()
 }
 
 const A  = 2
@@ -18,8 +19,9 @@ func consts() {
 }
 
 const (
-	CAT = 1
+	CAT = iota
 	_
+
 	MOUSE
 	DOG
 )
@@ -28,4 +30,5 @@ func enums() {
 
 	fmt.Println(CAT, MOUSE, DOG)
 }
+
 

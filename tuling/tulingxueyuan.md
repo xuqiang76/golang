@@ -138,6 +138,13 @@
 - 字符和字符串
 - 匿名变量(放弃变量)
 
+- 流程控制
+
+    - 条件判断(if switch)
+    - 循环(for)
+    - 跳转(goto break continue)
+    
+    
 
 - 内建容器  
     - 数组
@@ -145,14 +152,7 @@
     - map
     - list
 
-- 流程控制
 
-    - 条件判断(if)
-    - 循环(for)
-        - break continue
-    - 分支(switch)
-    - 跳转(goto)
-    
     - 错误处理
     
 - 函数
