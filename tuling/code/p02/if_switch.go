@@ -3,22 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	ifFunc()
+	switchFunc()
 }
 
 func ifFunc() {
-	a := 11
-	if a > 10 {
+
+	if a := 11; a > 10 {
 		fmt.Println(">10")
 	} else if a < 0 {
 		fmt.Println("<0")
 	} else {
 		fmt.Println("[0,10]")
 	}
+
 }
 
 func switchFunc() {
 	a := 10
+
 	switch a {
 	case 10:
 		fmt.Println("ten")
@@ -29,9 +31,9 @@ func switchFunc() {
 	}
 
 	switch {
-	case a > 0 && a < 60:
+	case a >= 0 && a < 60:
 		fmt.Println("F")
-		//fallthrough
+		fallthrough
 	case a < 80:
 		fmt.Println("C")
 	case a < 90:

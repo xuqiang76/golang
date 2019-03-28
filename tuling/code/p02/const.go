@@ -5,23 +5,22 @@ import (
 )
 
 func main() {
-	consts()
 	enums()
 }
 
-const A  = 2
+const A = 1
+const B = A + 2
 
 func consts() {
-
 	var i uint8 = 255
-	fmt.Println(i + A)
+	fmt.Println(i+A, B)
 
 }
 
 const (
-	CAT = iota
-	_
+	_ = iota
 
+	CAT = iota
 	MOUSE
 	DOG
 )
@@ -30,5 +29,3 @@ func enums() {
 
 	fmt.Println(CAT, MOUSE, DOG)
 }
-
-

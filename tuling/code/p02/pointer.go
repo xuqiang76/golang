@@ -3,18 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	varPointer()
+	newPointer()
 }
-
 
 func varPointer() {
 	a := 2
-	var ptr *int = &a
+	var ptr = &a
 	b := *ptr
 	*ptr = 3
 
-	fmt.Println(a, b, ptr)
+	fmt.Println(a, b, ptr, &b)
+
 }
+
 
 func newPointer() {
 	ptr := new(string)
